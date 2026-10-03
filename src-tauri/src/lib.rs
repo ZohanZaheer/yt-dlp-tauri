@@ -29,7 +29,7 @@ use toolchain::{
 
 const TOOLS_MANIFEST_FILE: &str = "tools-manifest.json";
 const LEGACY_LATEST_RELEASE_API_URL: &str =
-    "https://api.github.com/repos/Chlience/yt-dlp-tauri/releases/latest";
+    "https://api.github.com/repos/ZohanZaheer/yt-dlp-tauri/releases/latest";
 const TOOLCHAIN_STABLE_API_URL: &str =
     "https://api.github.com/repos/Chlience/yt-dlp-tauri-toolchain/releases/tags/toolchain-stable";
 const TOOLCHAIN_RELEASE_API_PREFIX: &str =
@@ -1962,19 +1962,19 @@ mod tests {
     #[test]
     fn resolves_github_urls_through_proxy_when_requested() {
         assert_eq!(
-            resolve_github_url_for_mode("https://github.com/Chlience/yt-dlp-tauri", "direct"),
-            "https://github.com/Chlience/yt-dlp-tauri"
+            resolve_github_url_for_mode("https://github.com/ZohanZaheer/yt-dlp-tauri", "direct"),
+            "https://github.com/ZohanZaheer/yt-dlp-tauri"
         );
         assert_eq!(
-            resolve_github_url_for_mode("https://github.com/Chlience/yt-dlp-tauri", "gh-proxy"),
-            "https://gh-proxy.com/https://github.com/Chlience/yt-dlp-tauri"
+            resolve_github_url_for_mode("https://github.com/ZohanZaheer/yt-dlp-tauri", "gh-proxy"),
+            "https://gh-proxy.com/https://github.com/ZohanZaheer/yt-dlp-tauri"
         );
         assert_eq!(
             resolve_github_url_for_mode(
-                "https://gh-proxy.com/https://github.com/Chlience/yt-dlp-tauri",
+                "https://gh-proxy.com/https://github.com/ZohanZaheer/yt-dlp-tauri",
                 "gh-proxy"
             ),
-            "https://gh-proxy.com/https://github.com/Chlience/yt-dlp-tauri"
+            "https://gh-proxy.com/https://github.com/ZohanZaheer/yt-dlp-tauri"
         );
     }
 
@@ -1988,14 +1988,14 @@ mod tests {
                 },
                 {
                     "name": "tools-manifest.json",
-                    "browser_download_url": "https://github.com/Chlience/yt-dlp-tauri/releases/download/v0.1.10/tools-manifest.json"
+                    "browser_download_url": "https://github.com/ZohanZaheer/yt-dlp-tauri/releases/download/v0.1.10/tools-manifest.json"
                 }
             ]
         });
 
         assert_eq!(
             find_tool_manifest_download_url(&payload).as_deref(),
-            Some("https://github.com/Chlience/yt-dlp-tauri/releases/download/v0.1.10/tools-manifest.json")
+            Some("https://github.com/ZohanZaheer/yt-dlp-tauri/releases/download/v0.1.10/tools-manifest.json")
         );
     }
 

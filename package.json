@@ -6,12 +6,12 @@
   "license": "GPL-3.0-only",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Chlience/yt-dlp-tauri.git"
+    "url": "git+https://github.com/ZohanZaheer/yt-dlp-tauri.git"
   },
   "bugs": {
-    "url": "https://github.com/Chlience/yt-dlp-tauri/issues"
+    "url": "https://github.com/ZohanZaheer/yt-dlp-tauri/issues"
   },
-  "homepage": "https://github.com/Chlience/yt-dlp-tauri#readme",
+  "homepage": "https://github.com/ZohanZaheer/yt-dlp-tauri#readme",
   "keywords": [
     "yt-dlp",
     "tauri",
@@ -36,5 +36,8 @@
     "@tauri-apps/cli": "^2",
     "typescript": "~5.6.2",
     "vite": "^6.0.3"
+  },
+  "allowScripts": {
+    "esbuild@0.25.12": true
   }
 }
