@@ -4,6 +4,20 @@ All notable changes to this project will be documented in this file.
 
 ## Unreleased
 
+## 0.1.14 - 2026-10-02
+
+### 中文
+-Add set_proxy/clear_proxy Tauri commands with URL validation
+-Persist proxy to state/proxy.txt; inject --proxy into yt-dlp calls
+-Add proxy settings UI with en/zh i18n and full app-state wiring
+-Add build-exe.yml CI, NOTICE (GPL-3.0 attribution), secondary-dev README
+
+### English
+-Add set_proxy/clear_proxy Tauri commands with URL validation
+-Persist proxy to state/proxy.txt; inject --proxy into yt-dlp calls
+-Add proxy settings UI with en/zh i18n and full app-state wiring
+-Add build-exe.yml CI, NOTICE (GPL-3.0 attribution), secondary-dev README
+
 ## 0.1.13 - 2026-07-14
 
 ### 中文
